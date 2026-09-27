@@ -277,6 +277,18 @@ Creative Commons and require credit if they go on a poster or slide.
 
 ---
 
+## Licence
+
+The **code** in this repository is released under the MIT Licence — see
+[`LICENSE`](LICENSE). You may use, modify and share it, provided the copyright
+notice stays with it.
+
+The **photographs** are not covered by that licence. They come from a
+public-domain NOAA Fisheries catalogue and are free to reuse, but `CREDITS.txt`
+records where every one of them came from and should travel with them.
+
+---
+
 ## Still to do
 
 - The **database stage**: saving each confirmed sighting (dolphin, date, place,
