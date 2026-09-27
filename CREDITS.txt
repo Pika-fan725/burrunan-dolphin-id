@@ -1,0 +1,135 @@
+IMAGE CREDITS AND LICENCES
+==========================
+
+All sample photographs used in this project came from Wikimedia Commons and are
+published under Creative Commons licences. They may be used in the display as
+long as the photographer is credited and the licence is named, as below.
+
+If any of these images go on a poster or a slide, this credit list needs to go
+with them.
+
+
+SOURCE PHOTO ATTRIBUTION
+------------------------
+
+Kirra_01.jpg
+    Original title: "Burrunan Dolphin Port Phillip Bay 2011"
+    Photographer:   Michael J Fromholtz
+    Licence:        CC BY-SA 3.0
+    Taken:          Port Phillip Bay, Victoria, Australia, 3 April 2011
+    Source: https://commons.wikimedia.org/wiki/File:Burrunan_Dolphin_Port_Phillip_Bay_2011.jpg
+
+Pod_01.jpg
+    Original title: "Burrunan Dolphins 2011"
+    Photographer:   Michael J Fromholtz
+    Licence:        CC BY-SA 3.0
+    Source: https://commons.wikimedia.org/wiki/File:Burrunan_Dolphins_2011.jpg
+
+Bowrider_01.jpg
+    Original title: "Burrunan Dolphin bow riding 2011"
+    Photographer:   Michael J Fromholtz
+    Licence:        CC BY-SA 3.0
+    Source: https://commons.wikimedia.org/wiki/File:Burrunan_Dolphin_bow_riding_2011.jpg
+    NOT USED - the dolphin is underwater and no dorsal fin is visible.
+
+Marlo_01.jpg  and  Tambo_01.jpg
+    Original titles: "Dauphin australie (cropped)" and "Dauphin australie"
+    Photographer:    Camille Menard
+    Licence:         CC BY-SA 2.0 FR
+    Source: https://commons.wikimedia.org/wiki/File:Dauphin_australie.jpg
+    These two files are the same photograph at two different crops.
+    NOT USED as reference fins - the fin is photographed from the front, so its
+    side-on outline cannot be seen.
+
+
+CATALOGUE FINS  (catalogue/)
+----------------------------
+
+These are cropped from the photographs above. Cropping counts as a
+modification, which the CC BY-SA licences allow as long as it is stated.
+
+    PPB001_01.jpg   side-on fin, cropped from Kirra_01.jpg   (Fromholtz, CC BY-SA 3.0)
+    PPB002_01.jpg   left-hand fin, cropped from Pod_01.jpg   (Fromholtz, CC BY-SA 3.0)
+    PPB003_01.jpg   right-hand fin, cropped from Pod_01.jpg  (Fromholtz, CC BY-SA 3.0)
+
+The PPB reference numbers are made up for this project. They are NOT real
+Burrunan dolphin catalogue IDs, and these are not identified individuals - they
+are simply three different fins that happen to be photographed side on.
+
+
+TEST SIGHTINGS  (sightings/)
+----------------------------
+
+    sighting_01.jpg   PPB002's fin, rotated, resized, brightened and blurred
+    sighting_02.jpg   PPB001's fin, MIRRORED, rotated, resized and darkened
+    sighting_03.jpg   the front-on fin cropped from Tambo_01.jpg (Menard, CC BY-SA 2.0 FR)
+
+IMPORTANT, and worth saying out loud in the presentation: sightings 01 and 02
+are not genuine re-sightings. There is no free set of photographs showing the
+same wild Burrunan dolphin twice, so these were made by taking a catalogue fin
+and changing it the way a second sighting would - different angle, distance,
+lighting and sharpness. They prove the matching maths survives those changes.
+They do not prove the program works on two genuinely separate photographs of
+the same animal, because nothing here can prove that.
+
+Sighting 03 is a real, untouched crop of a different dolphin, and the program
+correctly refuses to match it.
+
+For a proper test with genuinely re-sighted individuals, the Happywhale dataset
+on Kaggle has over 15,000 individually identified marine mammals with several
+photographs each. It needs a free Kaggle account to download:
+    https://www.kaggle.com/competitions/happy-whale-and-dolphin
+
+
+NOAA VALIDATION DATA
+--------------------
+
+The NOAA Beaufort, North Carolina photo dataset is used only to validate the
+method on genuinely separate re-sightings of the same dolphin. It contains
+bottlenose dolphins from North Carolina, not Burrunan dolphins from Gippsland,
+so it must be described as stand-in validation data in the presentation.
+
+    Source: NOAA Fisheries, InPort item 67547
+    Licence/status: US government work, public domain
+    Dataset page: https://www.fisheries.noaa.gov/inport/item/67547
+
+Tagged, overlaid, obscured, and front-on fins were rejected so the program is
+not accidentally identifying a tag or text.
+
+The live display also includes this genuine re-sighting example, copied from
+the archive while preserving the originals:
+
+    catalogue/NOAA0423_01.jpg  <- 0423_PS304_10Aug2006_0487.JPG
+    sightings/NOAA0423_01.jpg <- 0423_NES403_2013Jul10_AMG_N1_0398.JPG
+    catalogue/NOAA0472_01.jpg  <- 0472_2007_Jun_27_20D0067.JPG
+    sightings/NOAA0472_01.jpg <- 0472_SMR319_2018Jan17_AMG_0145.JPG
+    sightings/NOAA0434_01.jpg <- 0434_2016Apr29_AMG_0056.JPG
+
+The 0423 and 0472 catalogue/sighting pairs have matching NOAA IDs and are
+separately taken photographs, not simulated edits. NOAA0434 appears only as a
+sighting, so it must not be recognised; the program routes it to human review.
+All comparisons use the fin silhouette and trailing-edge notch pattern only;
+water and waves are excluded before comparison.
+
+Showcase set added 11 Sep 2026 (chosen because both photos trace cleanly and
+are free of tags, brands and overlays; freeze-branded "FB" animals were left
+out on purpose):
+
+    catalogue/NOAA0324_01.jpg    <- 0324_08Nov2002.jpg
+    sightings/NOAA0324_01.jpg    <- 0324_SMR480_2018Jan24_AMG_0190.JPG
+    catalogue/NOAAPS1253_01.jpg  <- PS1253_2015_Aug_22_BLB_RebelCamera_045.JPG
+    sightings/NOAAPS1253_01.jpg  <- PS1253_NES603_2013_JUN_28_C1_LAD_0150.JPG
+    catalogue/NOAAPS1197_01.jpg  <- PS1197_NES131_2013_JUL_22_S1_VGT_0822.JPG
+    sightings/NOAAPS1197_01.jpg  <- PS1197_SMR428_2018Jan22_AMG_0341.JPG
+    catalogue/NOAA0087_01.jpg    <- 0087_PS565_16_Oct_2006_AMG_0032.JPG
+    sightings/NOAA0087_01.jpg    <- 0087_PS835_12_Dec_2006_AMG_0470.JPG
+    catalogue/NOAAPS1217_01.jpg  <- PS1217_SMR279_2018Jan17_KAW_0187.JPG
+    sightings/NOAAPS1217_01.jpg  <- PS1217_NES080_2013_JUN_18_S1_VGT_0006.JPG
+    catalogue/NOAAPS1235_01.jpg  <- PS1235_NES155_2013_Jun_27_N1_AMG_0613.JPG
+    sightings/NOAAPS1235_01.jpg  <- PS1235_SMR001_2018Jan08_AMG_0191.JPG
+    catalogue/NOAAPS1362_01.jpg  <- PS1362_SMR373_2018Jan19_AMG_1218.JPG
+    sightings/NOAAPS1362_01.jpg  <- PS1362_NES226_2013_JUL_26_S1_VGT_0130.JPG
+    (PS1372 was tried and removed: its fin has almost no notches, so it scored
+     moderately against everything and caused false matches. Poorly marked
+     animals are a known hard case for photo-ID, human or computer.)
+    sightings/NOAA0216_01.jpg    <- 0216_2018May31_AMG_0285.JPG   (NOT in catalogue - should be refused)

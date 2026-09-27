@@ -1,0 +1,15 @@
+# The NOAA photo archive - 308 MB, 1,011 photos.
+# Far too big for GitHub, and it is public-domain data anyone can re-download.
+# The ~20 photos actually used are in catalogue/ and sightings/, and every
+# original filename is listed in CREDITS.txt, so the work stays reproducible.
+noaa_raw/
+
+# Written by the program while it runs - not source code.
+temp_edges/
+human_review/
+results*.csv
+
+# macOS and Python clutter
+.DS_Store
+__pycache__/
+*.pyc
